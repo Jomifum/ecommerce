@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSE'S PET SHOP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .bg-light-orange {
+            background-color: #FFDAB9;
+        }
+        .text-light-orange {
+            color: #FFDAB9;
+        }
+        .btn-light-orange {
+            background-color: #FFDAB9;
+            border-color: #FFDAB9;
+            color: #333;
+        }
+        .btn-light-orange:hover {
+            background-color: #FFC4A3;
+            border-color: #FFC4A3;
+        }
+        .services-section {
+            background: url('your-background-image-url.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 5rem 0;
+        }
+        .services-section .card {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .services-section h2 {
+            color: white;
+            margin-bottom: 30px;
+        }
+        .img-small {
+            width: 300px;  /* adjust as needed */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="Designer.png" alt="JOSE'S PET SHOP" style="height: 60px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin.html">Admin</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-light-orange text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to JOSE'S PET SHOP</h1>
+            <p class="lead">Your one-stop shop for all your pet needs</p>
+            <a href="products.html" class="btn btn-light-orange btn-lg">Go to Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="text-center">Our Services</h2>
+            <ul style="list-style-type: none;">
+                <!-- Veterinary Service -->
+                <li>
+                    <div class="card">
+                        <img src="vet.jpg" class="card-img-top img-small" alt="Veterinary Service">
+                        <div class="card-body">
+                            <h5 class="card-title">Veterinary</h5>
+                            <p class="card-text">Our top-notch veterinary services are dedicated to keeping your pet healthy and happy. We provide comprehensive medical care, including routine check-ups, vaccinations, dental care, and emergency services. Our experienced veterinarians are committed to delivering the highest standard of care and ensuring your pet's well-being.</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- Training Service -->
+                <li>
+                    <div class="card">
+                        <img src="training.png" class="card-img-top img-small" alt="Training Service">
+                        <div class="card-body">
+                            <h5 class="card-title">Training</h5>
+                            <p class="card-text">Our expert training programs are designed to help your pet develop good habits and positive behaviors. We offer personalized training sessions for dogs of all ages and breeds, focusing on obedience, socialization, and specific behavior issues. Our trainers use positive reinforcement methods to ensure a fun and effective learning experience for your pet.</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- Grooming Service -->
+                <li>
+                    <div class="card">
+                        <img src="9689967.jpg" class="card-img-top img-small" alt="Grooming Service">
+                        <div class="card-body">
+                            <h5 class="card-title">Grooming</h5>
+                            <p class="card-text">Our professional grooming services ensure your pet looks and feels their best. From bathing and brushing to nail trimming and styling, we provide a full range of grooming services for all types of pets. Our experienced groomers use gentle techniques and high-quality products to keep your furry friend looking fabulous.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>© 2024 Pet Shop. All rights reserved.</p>
+            <p>Follow us on
+                <a href="#" class="text-white">Facebook</a>,
+                <a href="#" class="text-white">Twitter</a>, and
+                <a href="#" class="text-white">Instagram</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

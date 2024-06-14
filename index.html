@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSE'S PET SHOP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .bg-light-orange {
+            background-color: #FFDAB9;
+        }
+        .text-light-orange {
+            color: #FFDAB9;
+        }
+        .btn-light-orange {
+            background-color: #FFDAB9;
+            border-color: #FFDAB9;
+            color: #333;
+        }
+        .btn-light-orange:hover {
+            background-color: #FFC4A3;
+            border-color: #FFC4A3;
+        }
+        .cart-item {
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        .navbar {
+            background: url('your-background-image-url.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .navbar-brand img {
+            height: 80px; /* Adjust this value to make the logo bigger */
+        }
+        .hero-section {
+            background: url('dogs.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 5rem 0;
+        }
+        .services-section {
+            background-color: #f8f9fa;
+            padding: 5rem 0;
+        }
+        .services-section .card {
+            margin-bottom: 30px;
+        }
+        .products-section {
+            background-color: #f8f9fa;
+            padding: 5rem 0;
+        }
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Designer.png" alt="Pet Shop">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin.html">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4">Welcome to Our Pet Shop</h1>
+            <p class="lead">Your one-stop shop for all your pet needs</p>
+            <a href="products.html" class="btn btn-light-orange btn-lg">Go to Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="text-center"><i class="fas fa-paw"></i> Our Services</h2>
+            <div id="servicesAccordion">
+                <!-- Service 1 -->
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fas fa-cut"></i> Grooming
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#servicesAccordion">
+                        <div class="card-body">
+                            Professional grooming services for all pet types.
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fas fa-dog"></i> Training
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#servicesAccordion">
+                        <div class="card-body">
+                            Expert training to help your pet behave perfectly.
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="fas fa-stethoscope"></i> Veterinary
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#servicesAccordion">
+                        <div class="card-body">
+                            Top-notch veterinary services to keep your pet healthy.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <h2 class="text-center"><i class="fas fa-shopping-cart"></i> Our Products</h2>
+            <div id="productsAccordion">
+                <!-- Product 1 -->
+                <div class="card">
+                    <div class="card-header" id="productHeadingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#productCollapseOne" aria-expanded="true" aria-controls="productCollapseOne">
+                            <i class="fas fa-bone"></i> Pet Food
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="productCollapseOne" class="collapse show" aria-labelledby="productHeadingOne" data-parent="#productsAccordion">
+                        <div class="card-body">
+                            High-quality food for all types of pets.
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="card">
+                    <div class="card-header" id="productHeadingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#productCollapseTwo" aria-expanded="false" aria-controls="productCollapseTwo">
+                            <i class="fas fa-ball-pile"></i> Pet Toys
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="productCollapseTwo" class="collapse" aria-labelledby="productHeadingTwo" data-parent="#productsAccordion">
+                        <div class="card-body">
+                            Fun and durable toys for your pet's playtime.
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="card">
+                    <div class="card-header" id="productHeadingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#productCollapseThree" aria-expanded="false" aria-controls="productCollapseThree">
+                            <i class="fas fa-tag"></i> Pet Accessories
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="productCollapseThree" class="collapse" aria-labelledby="productHeadingThree" data-parent="#productsAccordion">
+                        <div class="card-body">
+                            Stylish and functional accessories for your pet.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <form action="contact.php" method="post">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Pet Shop. All rights reserved.</p>
+            <p>Follow us on
+                <a href="#" class="text-white">Facebook</a>,
+                <a href="#" class="text-white">Twitter</a>, and
+                <a href="#" class="text-white">Instagram</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
